@@ -1,0 +1,28 @@
+{
+    "name": "slimphp-api/slim-eloquent",
+    "require": {
+        "php": ">5.6",
+        "illuminate/database": "5.*",
+        "illuminate/events": "5.*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "4.*",
+        "mikey179/vfsStream": "1.*",
+        "satooshi/php-coveralls": "^0.7.0@dev",
+        "slimphp-api/slim-api": "dev-master"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Gabriel Baker",
+            "email": "me@g403.co"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {"SlimEloquent\\": "src/"}
+    },
+    "autoload-dev": {
+        "psr-4": {"SlimEloquentTest\\": "tests/phpunit/"}
+    }
+}
