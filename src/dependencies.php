@@ -4,5 +4,5 @@ $container['model.structure'] = function($container) {
 };
 
 $container['SlimApi\Model\ModelInterface'] = function($container) {
-    return new \SlimApi\Model\EloquentModelService($container->get('model.structure'), $container->get('namespace.root'));
+    return new \SlimEloquent\Model\EloquentModelService($container->get('model.structure'), $container->get('namespace.root'));
 };
