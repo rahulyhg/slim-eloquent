@@ -1,6 +1,6 @@
 <?php
 $container['model.structure'] = function($container) {
-    return realpath(__DIR__.'/../templates').'/ModelTemplate.txt');
+    return realpath(__DIR__.'/../templates').'/ModelTemplate.txt';
 };
 
 $container['SlimApi\Model\ModelInterface'] = function($container) {
