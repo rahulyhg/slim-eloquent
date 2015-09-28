@@ -1,6 +1,8 @@
 <?php
 namespace SlimEloquent;
 
+use SlimApi\Service\ConfigService;
+
 class Module
 {
     /**
@@ -8,6 +10,6 @@ class Module
      */
     public function loadDependencies($container)
     {
-        return SlimApi\Service\ConfigService::fetch(dirname(__DIR__));
+        return ConfigService::fetch(dirname(__DIR__));
     }
 }
