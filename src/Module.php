@@ -3,8 +3,11 @@ namespace SlimEloquent;
 
 class Module
 {
+    /**
+     * load the dependencies for the module.
+     */
     public function loadDependencies($container)
     {
-        require __DIR__.'/dependencies.php';
+        return SlimApi\Service\ConfigService::fetch(dirname(__DIR__));
     }
 }
