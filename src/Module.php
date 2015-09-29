@@ -1,8 +1,6 @@
 <?php
 namespace SlimEloquent;
 
-use SlimApi\Service\ConfigService;
-
 class Module
 {
     /**
