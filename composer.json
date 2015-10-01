@@ -1,5 +1,7 @@
 {
     "name": "slimphp-api/slim-eloquent",
+    "description": "eloquent orm for slim-api",
+    "keywords": ["slim","api","eloquent","orm","slimapi"],
     "require": {
         "php": ">5.6",
         "illuminate/database": "5.*",
