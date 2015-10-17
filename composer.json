@@ -3,13 +3,13 @@
     "require": {
         "php": ">5.6",
         "illuminate/database": "5.*",
-        "illuminate/events": "5.*"
+        "illuminate/events": "5.*",
+        "slimphp-api/slim-api": "*@dev"
     },
     "require-dev": {
         "phpunit/phpunit": "4.*",
         "mikey179/vfsStream": "1.*",
-        "satooshi/php-coveralls": "^0.7.0@dev",
-        "slimphp-api/slim-api": "dev-master"
+        "satooshi/php-coveralls": "^0.7.0@dev"
     },
     "license": "MIT",
     "authors": [
@@ -19,6 +19,7 @@
         }
     ],
     "minimum-stability": "dev",
+    "prefer-stable": true,
     "autoload": {
         "psr-4": {"SlimEloquent\\": "src/"}
     },

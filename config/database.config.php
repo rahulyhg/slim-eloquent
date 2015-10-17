@@ -40,4 +40,8 @@ $config['database.connectEloquent'] = function($container) {
     return $manager;
 };
 
+$config['SlimEloquent\Init'] = function($container) {
+    $container['database.connectEloquent'];
+};
+
 return $config;
