@@ -1,5 +1,7 @@
 {
     "name": "slimphp-api/slim-eloquent",
+    "description": "A module for slim-api for eloquent integration, using eloquent as the ORM",
+    "keywords": ["slim","api","eloquent","slimapi"],
     "require": {
         "php": ">5.6",
         "illuminate/database": "5.*",
