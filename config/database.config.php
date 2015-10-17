@@ -9,9 +9,7 @@ $config['SlimApi\Model\ModelInterface'] = function($container) {
 };
 
 $config['database.configForEloquent'] = function($container) {
-    $config         = $container['database.config'];
-    $environment    = $container['environment.name'];
-    $phinxConfig    = $container['database.config']->getEnvironment($environment);
+    $standardisedConfig    = $container['database.config'];
     $eloquentConfig = [
         'driver'    => $phinxConfig['adapter'],
         'host'      => $phinxConfig['host'],
