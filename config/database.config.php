@@ -5,18 +5,18 @@ $config['eloquentModelTemplate'] = function($container) {
 };
 
 $config['SlimApi\Model\ModelInterface'] = function($container) {
-    return new \SlimEloquent\Model\EloquentModelService($container->get('eloquentModelTemplate'), $container->get('namespace'));
+    return new \SlimApi\Eloquent\Model\EloquentModelService($container->get('eloquentModelTemplate'), $container->get('namespace'));
 };
 
 $config['database.configForEloquent'] = function($container) {
     $standardisedConfig    = $container['database.config'];
     $eloquentConfig = [
-        'driver'    => $phinxConfig['adapter'],
-        'host'      => $phinxConfig['host'],
-        'database'  => $phinxConfig['name'],
-        'username'  => $phinxConfig['user'],
-        'password'  => $phinxConfig['pass'],
-        'charset'   => $phinxConfig['charset'],
+        'driver'    => $standardisedConfig['adapter'],
+        'host'      => $standardisedConfig['host'],
+        'database'  => $standardisedConfig['name'],
+        'username'  => $standardisedConfig['user'],
+        'password'  => $standardisedConfig['pass'],
+        'charset'   => $standardisedConfig['charset'],
         'collation' => 'utf8_unicode_ci',
         'prefix'    => '',
     ];
@@ -38,7 +38,7 @@ $config['database.connectEloquent'] = function($container) {
     return $manager;
 };
 
-$config['SlimEloquent\Init'] = function($container) {
+$config['SlimApi\Eloquent\Init'] = function($container) {
     $container['database.connectEloquent'];
 };
 

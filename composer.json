@@ -23,9 +23,9 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "autoload": {
-        "psr-4": {"SlimEloquent\\": "src/"}
+        "psr-4": {"SlimApi\\Eloquent\\": "src/"}
     },
     "autoload-dev": {
-        "psr-4": {"SlimEloquentTest\\": "tests/phpunit/"}
+        "psr-4": {"SlimApi\\EloquentTest\\": "tests/phpunit/"}
     }
 }

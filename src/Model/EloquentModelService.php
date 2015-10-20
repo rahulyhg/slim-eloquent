@@ -1,5 +1,5 @@
 <?php
-namespace SlimEloquent\Model;
+namespace SlimApi\Eloquent\Model;
 
 use SlimApi\Interfaces\GeneratorServiceInterface;
 use SlimApi\Model\ModelInterface;

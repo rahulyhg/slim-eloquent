@@ -1,5 +1,5 @@
 <?php
-namespace SlimEloquent;
+namespace SlimApi\Eloquent;
 
 class Module
 {
