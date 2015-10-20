@@ -1,7 +1,7 @@
 <?php
-namespace SlimEloquentTest\Model;
+namespace SlimApi\EloquentTest\Model;
 
-use \SlimEloquent\Model\EloquentModelService;
+use \SlimApi\Eloquent\Model\EloquentModelService;
 
 class EloquentModelServiceTest extends \PHPUnit_Framework_TestCase
 {
