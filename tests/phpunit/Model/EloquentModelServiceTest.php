@@ -47,6 +47,15 @@ EOT;
         $this->assertEquals($modelStr, file_get_contents('src/Model/Bar.php'));
     }
 
+    public function testProcessCommand()
+    {
+        $columns = ['foo', 'bar'];
+        foreach ($columns as $column) {
+            $this->eloquentModelService->processCommand('addColumn', $column);
+        }
+        $this->assertEquals($columns, $this->eloquentModelService->commands);
+    }
+
     public function testTargetLocation()
     {
         $this->assertEquals('src/Model/Foo.php', $this->eloquentModelService->targetLocation('Foo'));
