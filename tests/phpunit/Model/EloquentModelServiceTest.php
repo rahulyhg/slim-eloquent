@@ -56,6 +56,15 @@ EOT;
         $this->assertEquals($columns, $this->eloquentModelService->commands);
     }
 
+    public function testInvalidProcessCommand()
+    {
+        $this->setExpectedException('Exception', 'Invalid model command.');
+        $columns = ['foo', 'bar'];
+        foreach ($columns as $column) {
+            $this->eloquentModelService->processCommand('foo', $column);
+        }
+    }
+
     public function testTargetLocation()
     {
         $this->assertEquals('src/Model/Foo.php', $this->eloquentModelService->targetLocation('Foo'));
